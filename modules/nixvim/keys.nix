@@ -35,12 +35,19 @@
         };
       }
       {
-        mode = "n";
+        key = "<leader>E";
+        action = "<cmd>Oil --float<cr>";
+        options.desc = "Oil";
+      }
+      {
+        key = "-";
+        action = "<cmd>Oil<cr>";
+        options.desc = "Oil";
+      }
+      {
         key = "<leader>e";
-        action = ":Explore";
-        options = {
-          desc = "+explore";
-        };
+        action = "<cmd>Neotree toggle<cr>";
+        options.desc = "Neotree";
       }
       {
         mode = "n";
