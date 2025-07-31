@@ -36,6 +36,14 @@
       }
       {
         mode = "n";
+        key = "<leader>e";
+        action = ":Explore";
+        options = {
+          desc = "+explore";
+        };
+      }
+      {
+        mode = "n";
         key = "<leader>s";
         action = "+search";
         options = {
