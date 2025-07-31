@@ -5,6 +5,12 @@
 }:
 {
   plugins = {
+    zig = {
+      enable = true;
+      settings = {
+        fmt_autosave = 0;
+      };
+    };
     lsp-format = {
       enable = true;
     };
@@ -58,6 +64,9 @@
               url = "";
             };
           };
+        };
+        zls = {
+          enable = true;
         };
       };
       keymaps = {
