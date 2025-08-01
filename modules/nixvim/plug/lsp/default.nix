@@ -5,12 +5,6 @@
 }:
 {
   plugins = {
-    zig = {
-      enable = true;
-      settings = {
-        fmt_autosave = 0;
-      };
-    };
     lsp-format = {
       enable = true;
     };
@@ -28,8 +22,8 @@
           enable = true;
           settings =
             let
-              flake = ''(builtins.getFlake "github:elythh/flake)""'';
-              flakeNixvim = ''(builtins.getFlake "github:elythh/nixvim)""'';
+              flake = ''(builtins.getFlake "github:GildedSeraphim/.dotfiles)""'';
+              flakeNixvim = ''(builtins.getFlake "github:GildedSeraphim/nixvim)""'';
             in
             {
               nixpkgs = {
@@ -65,9 +59,7 @@
             };
           };
         };
-        zls = {
-          enable = true;
-        };
+
       };
       keymaps = {
         silent = true;
