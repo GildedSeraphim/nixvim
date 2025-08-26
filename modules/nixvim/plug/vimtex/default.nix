@@ -26,10 +26,4 @@
       };
     }
   ];
-  options = lib.mkIf config.plugins.vimtex.enable {
-    conceallevel = 1;
-  };
-  globals = lib.mkIf config.plugins.vimtex.enable {
-    tex_conceal = "abdmg";
-  };
 }
