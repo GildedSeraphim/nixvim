@@ -4,13 +4,14 @@
     vimtex = {
       enable = true;
       settings = {
-        compiler_method = "pdflatex";
+        compiler_method = "latexmk";
         toc_config = {
           split_pos = "vert topleft";
           split_width = 40;
         };
-        quickfix_mode = 0;
         view_method = "zathura";
+        conceallevel = 1;
+        tex_conceal = "abdmg";
       };
     };
   };
