@@ -1,8 +1,14 @@
-{ lib, config, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 {
   plugins = {
     vimtex = {
       enable = true;
+      texlivePackage = pkgs.texliveFull;
       settings = {
         compiler_method = "latexmk";
         toc_config = {
