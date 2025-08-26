@@ -60,7 +60,7 @@ in
           {
             section = "terminal";
             cmd = "${lib.getExe thissifine}; sleep .4";
-            height = 25;
+            height = 3;
             padding = 1;
           }
           {
