@@ -8,7 +8,7 @@ let
     pkgs.writeShellScriptBin "thisisfine" # bash
       ''
         #!/usr/bin/env sh
-        printf ":)";
+        printf ">:)";
       '';
 in
 {

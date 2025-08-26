@@ -13,11 +13,9 @@ in
   ];
 
   plugins = {
-    blink-cmp-copilot.enable = !config.plugins.blink-copilot.enable;
     blink-cmp-dictionary.enable = true;
     blink-cmp-git.enable = true;
     blink-cmp-spell.enable = true;
-    blink-copilot.enable = true;
     blink-emoji.enable = true;
     blink-ripgrep.enable = true;
     blink-cmp = {
@@ -61,12 +59,6 @@ in
               name = "Emoji";
               module = "blink-emoji";
               score_offset = 1;
-            };
-            copilot = {
-              name = "copilot";
-              module = "blink-copilot";
-              async = true;
-              score_offset = 100;
             };
             lsp.score_offset = 4;
             spell = {
