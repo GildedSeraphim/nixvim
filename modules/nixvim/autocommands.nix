@@ -5,26 +5,6 @@
       event = "InsertEnter";
       command = "norm zz";
     }
-
-    # Open help in a vertical split
-    {
-      event = "FileType";
-      pattern = "help";
-      command = "wincmd L";
-    }
-
-    # Close Telescope prompt in insert mode by clicking escape
-    {
-      event = [ "FileType" ];
-      pattern = "TelescopePrompt";
-      command = "inoremap <buffer><silent> <ESC> <ESC>:close!<CR>";
-    }
-    {
-      event = [ "FileType" ];
-      pattern = "snacks_picker_input";
-      command = "inoremap <buffer><silent> <ESC> <ESC>:close!<CR>";
-    }
-
     # Enable spellcheck for some filetypes
     {
       event = "FileType";

@@ -18,9 +18,7 @@ in
     ++ [
       ./autocommands.nix
       ./keys.nix
-      ./options.nix
       ./sets.nix
-      ./highlight.nix
     ];
   nixpkgs = {
     overlays = lib.attrValues self.overlays;
