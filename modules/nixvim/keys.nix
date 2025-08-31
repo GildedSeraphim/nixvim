@@ -6,7 +6,6 @@
       mapleader = " ";
       maplocalleader = " ";
     };
-
     keymaps = [
       # General maps
       {
@@ -15,6 +14,36 @@
         options = {
           silent = true;
         };
+      }
+      {
+        action = "{}<Esc>ha";
+        key = "{";
+        mode = "i";
+      }
+      {
+        action = "()<Esc>ha";
+        key = "(";
+        mode = "i";
+      }
+      {
+        action = "[]<Esc>ha";
+        key = "[";
+        mode = "i";
+      }
+      {
+        action = "\"\"<Esc>ha";
+        key = "\"";
+        mode = "i";
+      }
+      {
+        action = "''<Esc>ha";
+        key = "'";
+        mode = "i";
+      }
+      {
+        action = "``<Esc>ha";
+        key = "`";
+        mode = "i";
       }
     ];
     extraConfigLua = ''
