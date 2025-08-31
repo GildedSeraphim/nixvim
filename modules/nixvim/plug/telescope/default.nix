@@ -9,7 +9,10 @@
   ...
 }:
 {
-  extraPackages = with pkgs; [ ripgrep ];
+  extraPackages = with pkgs; [
+    ripgrep
+    fd
+  ];
 
   keymaps = lib.mkIf config.plugins.telescope.enable [
     {
