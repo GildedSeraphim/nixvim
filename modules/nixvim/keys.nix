@@ -2,7 +2,10 @@
   config = {
     opts.conceallevel = 1;
     globals.tex_conceal = "abdmg";
-    globals.mapleader = " ";
+    globals = {
+      mapleader = " ";
+      maplocalleader = " ";
+    };
 
     keymaps = [
       # General maps
