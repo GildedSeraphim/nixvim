@@ -15,43 +15,6 @@
           silent = true;
         };
       }
-      {
-        mode = "i";
-        key = "{";
-        action = "{}<Left>";
-        options = {
-          noremap = true;
-          silent = true;
-        };
-      }
-      {
-        mode = "i";
-        key = "[";
-        action = "[]<Left>";
-        options = {
-          noremap = true;
-          silent = true;
-        };
-      }
-      {
-        mode = "i";
-        key = "\"";
-        action = "\"\"<Left>";
-        options = {
-          noremap = true;
-          silent = true;
-        };
-      }
-      {
-        mode = "i";
-        key = "'";
-        action = "''<Left>";
-        options = {
-          noremap = true;
-          silent = true;
-        };
-      }
-
     ];
     extraConfigLua = ''
       function ToggleLineNumber()
