@@ -24,6 +24,114 @@
           noremap = true;
         };
       }
+      {
+        action = ":m '>+1<CR>gv=gv";
+        key = "J";
+        mode = "v";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = ":m '<-2<CR>gv=gv";
+        key = "K";
+        mode = "v";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "mzJ`z";
+        key = "J";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "<C-d>zz";
+        key = "<C-d>";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "<C-u>zz";
+        key = "<C-u>";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "nzzzv";
+        key = "n";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "Nzzzv";
+        key = "N";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "\"_dP";
+        key = "<leader>p";
+        mode = "x";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "\"_dP";
+        key = "<leader>p";
+        mode = "x";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>";
+        key = "<leader>s";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "<cmd>!chmod +x %<CR>";
+        key = "<leader>x";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        action = "<cmd>noh<CR>";
+        key = "<leader>q";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
     ];
     extraConfigLua = ''
       function ToggleLineNumber()
