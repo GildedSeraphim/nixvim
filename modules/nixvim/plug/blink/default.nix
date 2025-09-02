@@ -11,7 +11,7 @@
           "path"
           "buffer"
         ];
-        keymap.preset = "super-tab";
+        keymap.preset = "default";
         appearance = {
           nerd_font_variant = "mono";
           use_nvim_cmp_as_default = true;
