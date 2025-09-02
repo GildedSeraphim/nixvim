@@ -15,6 +15,15 @@
           silent = true;
         };
       }
+      {
+        action = "<cmd>Ex<cr>";
+        key = "<leader>pv";
+        mode = "n";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
     ];
     extraConfigLua = ''
       function ToggleLineNumber()
