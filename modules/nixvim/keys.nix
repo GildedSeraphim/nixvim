@@ -16,35 +16,42 @@
         };
       }
       {
-        action = "{}<Esc>ha";
+        mode = "i";
         key = "{";
-        mode = "i";
+        action = "{}<Left>";
+        options = {
+          noremap = true;
+          silent = true;
+        };
       }
       {
-        action = "()<Esc>ha";
-        key = "(";
         mode = "i";
-      }
-      {
-        action = "[]<Esc>ha";
         key = "[";
-        mode = "i";
+        action = "[]<Left>";
+        options = {
+          noremap = true;
+          silent = true;
+        };
       }
       {
-        action = "\"\"<Esc>ha";
+        mode = "i";
         key = "\"";
-        mode = "i";
+        action = "\"\"<Left>";
+        options = {
+          noremap = true;
+          silent = true;
+        };
       }
       {
-        action = "''<Esc>ha";
+        mode = "i";
         key = "'";
-        mode = "i";
+        action = "''<Left>";
+        options = {
+          noremap = true;
+          silent = true;
+        };
       }
-      {
-        action = "``<Esc>ha";
-        key = "`";
-        mode = "i";
-      }
+
     ];
     extraConfigLua = ''
       function ToggleLineNumber()
