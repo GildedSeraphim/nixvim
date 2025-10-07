@@ -18,6 +18,9 @@
         lua_ls = {
           enable = true;
         };
+        clangd = {
+          enable = true;
+        };
         nixd = {
           enable = true;
           settings =
