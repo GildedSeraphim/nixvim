@@ -34,5 +34,10 @@
         "x86_64-darwin"
       ];
       imports = [ ./flake ];
+      flake = {
+        # ← This exposes NixVim’s module outputs
+        homeModules.nixvim = inputs.nixvim.homeModules.default;
+        nixosModules.nixvim = inputs.nixvim.nixosModules.default;
+      };
     };
 }
