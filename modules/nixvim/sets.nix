@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   config = {
-    colorschemes.ayu.enable = true;
 
     performance = {
       byteCompileLua = {
